@@ -18,20 +18,27 @@ class _IntroScreenState extends State<IntroScreen> {
           child: Stack(
             alignment: Alignment.center,
             children: [
+              Positioned(top: screensize(context).height * 0.3, child: Text('장서현의 일기', style: textTheme(context).titleLarge,)),
               Positioned(
-                  width: MediaQuery.of(context).size.width * 0.9,
-                  left: MediaQuery.of(context).size.width * 0.1,
+                  width: screensize(context).width * 0.9,
+                  left: screensize(context).width * 0.1,
                   child: Image.asset('asset/images/logo-light.png')),
               Positioned(
-                  bottom: MediaQuery.of(context).size.height * 0.25,
-                  child: OutlinedButton(
-                    style: OutlinedButton.styleFrom(
+                bottom: screensize(context).height * 0.25,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
                       side: BorderSide(width: 2, color: HexColor('#FC6C54')),
-                      foregroundColor: HexColor('#FC6C54')
-                    ),
-                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const MainPage(),)),
-                    child: Text('시작하기', style: textTheme(context).bodyMedium,),
+                      foregroundColor: HexColor('#FC6C54')),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MainPage(),
+                      )),
+                  child: Text(
+                    '시작하기',
+                    style: textTheme(context).bodyMedium,
                   ),
+                ),
               ),
             ],
           ),

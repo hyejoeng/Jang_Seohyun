@@ -80,6 +80,10 @@ flutter:
     - family: SuseongHyejeong
       fonts:
         - asset: asset/fonts/SuseongHyejeong.ttf
+    - family: PyeongChang
+      fonts:
+        - asset: PyeongChang-Bold.ttf
+        - asset: PyeongChang-Regular.ttf
 
   # example:
   # fonts:
