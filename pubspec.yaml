@@ -82,8 +82,8 @@ flutter:
         - asset: asset/fonts/SuseongHyejeong.ttf
     - family: PyeongChang
       fonts:
-        - asset: PyeongChang-Bold.ttf
-        - asset: PyeongChang-Regular.ttf
+        - asset: asset/fonts/PyeongChang-Bold.ttf
+        - asset: asset/fonts/PyeongChang-Regular.ttf
 
   # example:
   # fonts:
