@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="jang_seohyun"
+        android:label="장서현의 일기"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
