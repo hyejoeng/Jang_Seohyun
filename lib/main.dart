@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jang_seohyun/scrollingscreen.dart';
 import 'package:jang_seohyun/theme.dart';
 
 import 'IntroScreen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeStyle.light,
       themeMode: ThemeMode.light,
       darkTheme: ThemeStyle.dark,
-      home: const IntroScreen(),
+      home: const ScrollingScreen(),
     );
   }
 }
