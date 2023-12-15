@@ -9,6 +9,8 @@ class ThemeStyle {
 
   static ThemeData get light => ThemeData.light().copyWith(
     useMaterial3: true,
+    primaryColor: Colors.white,
+    scaffoldBackgroundColor: Colors.white,
     textTheme: const TextTheme(
       titleLarge: TextStyle(color: Colors.black, fontSize: 32, fontWeight: FontWeight.bold, fontFamily: 'PyeongChang',),
       titleMedium: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'PyeongChang',),
