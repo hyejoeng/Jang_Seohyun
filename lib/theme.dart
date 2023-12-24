@@ -18,6 +18,8 @@ class ThemeStyle {
 
       bodyMedium: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.normal, fontFamily: 'SuseongHyejeong',),
       bodySmall: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.normal, fontFamily: 'SuseongHyejeong',),
+
+
     ),
   );
 }

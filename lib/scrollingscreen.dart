@@ -69,7 +69,8 @@ class _CustomHeader extends SliverPersistentHeaderDelegate {
         // borderRadius: BorderRadius.circular(radius),
         borderRadius: BorderRadius.vertical(top: Radius.circular(radius)),
       ),
-      child: Center(
+      child: Container(
+        alignment: Alignment.center,
         child: Text(
           '날짜별 관찰 일지',
           style: textTheme(context).titleMedium,
