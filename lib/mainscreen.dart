@@ -10,22 +10,30 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   @override
-  Widget build(BuildContext context) => SafeArea(child: Scaffold(
-    appBar: AppBar(
-      centerTitle: true,
-      title: Text('관찰 일지', style: textTheme(context).titleMedium,),
-    ),
-    body: Padding(
-      padding: const EdgeInsets.all(8.0),   
-      child: Column(
-        children: [
-          Center(
-            child: Text('오늘의 관찰일지를 작성해주세요.', style: textTheme(context).titleSmall?.copyWith(
-              color: Colors.grey
-            ),),
-          )
-        ],
-      ),
-    ),
-  ));
+  Widget build(BuildContext context) => SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            titleTextStyle: textTheme(context).titleMedium,
+            title: const Text('관찰 일지'),
+          ),
+
+          body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Center(
+                  child: Text(
+                    '오늘의 관찰일지를 작성해주세요.',
+                    style: textTheme(context)
+                        .titleSmall
+                        ?.copyWith(color: Colors.grey),
+                  ),
+                )
+              ],
+            ),
+
+          ),
+        ),
+      );
 }
