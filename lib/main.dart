@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'example/table_calendar/events_example.dart';
+import 'package:jang_seohyun/mainscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeStyle.light,
       // themeMode: ThemeMode.light,
       // darkTheme: ThemeStyle.dark,
-      home: TableEventsExample(),
+      home: MainScreen(),
     );
   }
 }
