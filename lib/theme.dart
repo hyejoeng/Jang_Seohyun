@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 class ThemeStyle {
   static ThemeData get dark => ThemeData.dark().copyWith(
-    useMaterial3: true,
     textTheme: const TextTheme(
     ),
   );
 
   static ThemeData get light => ThemeData.light().copyWith(
-    useMaterial3: true,
     primaryColor: Colors.white,
     scaffoldBackgroundColor: Colors.white,
     textTheme: const TextTheme(
