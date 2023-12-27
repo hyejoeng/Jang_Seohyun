@@ -44,6 +44,7 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                 ),
                 CalenderWidget(),
+                SizedBox(height: 8),
               ],
             ),
           ),

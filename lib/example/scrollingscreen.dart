@@ -33,13 +33,14 @@ class ScrollingScreen extends StatelessWidget {
               ),
               SliverList(
                 delegate: SliverChildBuilderDelegate(
-                    (context, index) => ListView.builder(
-                        physics: const NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: ImagesDataList.length,
-                        itemBuilder: (context, index) =>
-                            _ImagesDataListWidget(context, index)),
-                    childCount: 1),
+                  (context, index) => ListView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: ImagesDataList.length,
+                      itemBuilder: (context, index) =>
+                          _ImagesDataListWidget(context, index)),
+                  childCount: 1,
+                ),
               ),
             ],
           ),
@@ -62,9 +63,9 @@ class _CustomHeader extends SliverPersistentHeaderDelegate {
     return Container(
       decoration: BoxDecoration(
         border: const BorderDirectional(
-            top: BorderSide(width: 2, color: Colors.black),
-            start: BorderSide(width: 2, color: Colors.black),
-            end: BorderSide(width: 2, color: Colors.black)),
+            top: BorderSide(width: 1, color: Colors.black),
+            start: BorderSide(width: 1, color: Colors.black),
+            end: BorderSide(width: 1, color: Colors.black)),
         color: Colors.white,
         // borderRadius: BorderRadius.circular(radius),
         borderRadius: BorderRadius.vertical(top: Radius.circular(radius)),
@@ -99,7 +100,10 @@ Widget _ImagesDataListWidget(BuildContext context, int index) =>
                   width: screensize(context).width * 0.25,
                   fit: BoxFit.cover,
                 ),
-                Text(ImagesDataList[index].dateData)
+                Text(
+                  ImagesDataList[index].dateData,
+                  style: textTheme(context).titleSmall,
+                )
               ],
             ),
           ),

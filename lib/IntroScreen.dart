@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:jang_seohyun/context_utils.dart';
 
-import 'mainpage.dart';
+import 'example/scrollingscreen.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({super.key});
@@ -55,7 +55,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const MainPage(),
+                        builder: (context) => const ScrollingScreen(),
                       )),
                   child: Text(
                     '시작하기',
